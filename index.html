@@ -11,7 +11,7 @@
     
     <!-- CSS-->
     <link rel="stylesheet" href="css/chico.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/product-detail.css">
+    <link rel="stylesheet" type="text/css" href="css/product-detail.min.css">
 
 </head>
 <body>
@@ -57,13 +57,48 @@
                         	<p><input type="submit" title="Buy - Ipad Mini Apple 16Gb Wifi Led 7." value="Buy" class="ch-btn ch-btn-big" tabindex="0"></p>
                             <p class="ch-form-hint">MercadoLibre isn`t owner of this product.</p>
                         </div>
-                        <div class="slider">
-                        	<h2>More Products like this</h2>
+                        <div class="slider-cont">
+                        	<h2>More Products like this</h2>                            
+                            <div id="slider-prod">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img itemprop="image" alt="Imagen 1" title="Imagen 1" src="./img/slider-1.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img itemprop="image" alt="Imagen 2" title="Imagen 2" src="./img/slider-1.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img itemprop="image" alt="Imagen 3" title="Imagen 3" src="./img/slider-1.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img itemprop="image" alt="Imagen 4" title="Imagen 4" src="./img/slider-1.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img itemprop="image" alt="Imagen 5" title="Imagen 5" src="./img/slider-1.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img itemprop="image" alt="Imagen 6" title="Imagen 6" src="./img/slider-1.jpg" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
                         </div>
                     </form>
                 </div>
             </section>
-            
             
 			<div class="tabs">
                 <div class="tab">
@@ -99,6 +134,13 @@
     <!-- JS -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/chico.min.js"></script>
+    
+    <script type="text/javascript">
+        var carousel = $('#slider-prod').carousel();
+    </script>
+    
+    
+    
 </body>
 
 </html>

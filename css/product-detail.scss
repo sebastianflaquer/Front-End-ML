@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL **************************************/
+
+.wrapper{ 
+    max-width:780px; 
+    min-height:100%; 
+    margin:auto;
+}
+/* END GENERAL */
+
+/* MD PRODUCT CONT ******************************/
+.md-product-cont{
+    padding: 0 20px;
+    .hd{
+        padding:20px 0;
+        h1{
+            font-size:37px;
+        }
+    }
+    .bd{
+        overflow:hidden;
+        figure{ 
+            float:left;
+            margin-right:40px;
+        }
+        .data{
+            float:left;
+            max-width: 300px;
+            .ch-price{
+                font-size: 29px;
+                margin-bottom: 10px;
+            }
+            .opt{
+                margin-bottom: 10px;
+            }
+        }
+        .ch-form-row{
+            padding:0;
+        }
+        label{
+            width:auto;
+        }
+    }    
+}
+
+.slider-cont{
+    margin-top: 25px;
+    #slider-prod{
+        ul{
+            li{
+                .item{
+                    width:80px;
+                    height: 80px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+.ch-carousel-item{
+    display: inline-block;
+}
+
+.ch-carousel-next, .ch-carousel-prev {
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 2.3em;
+}
+
+
+.ch-carousel-next:after {
+    content: "\f054";
+    right: 17px;
+}
+.ch-carousel-next:after, .ch-carousel-prev:after {
+    font-family: icons;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+/* TABS ******************************************/
+.tabs{
+    position: relative; 
+    min-height: 200px; 
+    clear: both; 
+    margin: 25px 0;
+    .tab{
+        float: left;
+        & [type=radio]{
+            display: none;
+        }
+        label{ 
+            background: #eee; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            margin-left: -1px; 
+            position: relative;
+            left: 1px;
+        }
+    }
+    [type=radio]:checked ~ label { 
+        background: #fff; 
+        border-bottom: 1px solid #fff;
+        z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content { 
+        z-index: 1;
+    }
+    .content { 
+        position: absolute; 
+        top: 28px; 
+        left: 0; 
+        background: #fff;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+        .ch-carousel-list{
+            width:100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
